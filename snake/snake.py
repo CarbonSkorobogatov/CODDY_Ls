@@ -7,7 +7,7 @@ pygame.init()
 pygame.display.set_caption("Snake")
 
 head = Rect(400, 300, 30, 30)
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode( (800, 600) )
 clock = pygame.time.Clock()
 SPEED = 10
 DIRECTION = [SPEED, 0]

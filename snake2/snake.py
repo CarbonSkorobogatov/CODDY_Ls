@@ -37,7 +37,7 @@ def load_img(src, x, y):
     return image, rect
 
 def move(obj):
-    global DIRECTION, SPEED, COLOR, KEYS
+    global DIRECTION, SPEED, COLOR, KEYS, GAME_POINTS
 
     if KEYS[K_UP]:
         DIRECTION = [0, -SPEED]
@@ -55,6 +55,8 @@ def move(obj):
         DIRECTION = [SPEED, 0]
     elif KEYS[K_a]:
         DIRECTION = [-SPEED, 0]
+    elif KEYS[K_SPACE]:
+        DIRECTION = [0, 0]
 
     if obj.bottom > 600:
         obj.top = 0

@@ -89,10 +89,10 @@ Ispalay = True
 
 while True:
     screen.fill( (0, 0, 0) )
-    for event in pygame.event.get():
-        if event.type == QUIT:
-            pygame.quit()
-            exit()
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.quit()
+                exit()
 
     if Ispalay:
         KEYS = pygame.key.get_pressed()
